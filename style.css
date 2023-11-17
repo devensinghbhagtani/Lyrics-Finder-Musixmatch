@@ -1,0 +1,109 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Set z-index to -1 to place the video behind other content */
+}
+.logo {
+    max-width: 325px; 
+    margin-left: 20px;
+}
+
+.container {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.68);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative; /* Relative positioning to allow z-index */
+    z-index: 1; /* Set a higher z-index to make your content appear on top */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+#searchButton {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f2f2f2;
+}
+/* ... */
+.card {
+    display: flex;
+    flex-direction: row;
+}
+.card-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    height: 100%;
+}
+
+.card-thumbnail {
+    height: 185px;
+    width: auto;
+    max-height: 100%;
+    border-radius: 10%;
+
+}
+.card-button {
+    font-size: 10px;
+    align-self: stretch;
+    margin-top: auto;
+}
+
+#lyrics p {
+    font-size: 18px;
+}
+
+#artistName {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+#searchButton {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px; /* Match the input's right corner */
+    border-bottom-right-radius: 20px; /* Match the input's right corner */
+    font-size: 16px;
+}
+
+#songArtist {
+    border-radius: 10px 0 0  10px;
+    border: none;
+}
+
+#searchButton {
+    background-color: #007bff;
+    border: none;
+    color: #fff; 
+    border-radius:  0 10px 10px 0 ;
+}
+
+#searchButton:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
